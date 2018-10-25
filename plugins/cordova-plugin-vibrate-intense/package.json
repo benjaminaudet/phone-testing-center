@@ -1,0 +1,56 @@
+{
+  "_from": "cordova-plugin-vibrate-intense",
+  "_id": "cordova-plugin-vibrate-intense@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-Lv2XXHcfvMQv+WTnMSedqMK24uw=",
+  "_location": "/cordova-plugin-vibrate-intense",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-vibrate-intense",
+    "name": "cordova-plugin-vibrate-intense",
+    "escapedName": "cordova-plugin-vibrate-intense",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-vibrate-intense/-/cordova-plugin-vibrate-intense-1.0.1.tgz",
+  "_shasum": "2efd975c771fbcc42ff964e731279da8c2b6e2ec",
+  "_spec": "cordova-plugin-vibrate-intense",
+  "_where": "/home/benjamin/Projets/PhoneGapTest",
+  "author": {
+    "name": "Alex Kwan, James Grisdale"
+  },
+  "bugs": {
+    "url": "https://github.com/blackberry/WebWorks-Community-APIs/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-vibrate-intense",
+    "platforms": [
+      "blackberry10"
+    ]
+  },
+  "deprecated": false,
+  "description": "BlackBerry 10 Community Contributed API to use the Vibration control",
+  "homepage": "https://github.com/blackberry/WebWorks-Community-APIs/tree/master/BB10-Cordova/VIBRATION#readme",
+  "keywords": [
+    "blackberry",
+    "vibration",
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-blackberry10"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-vibrate-intense",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackberry/WebWorks-Community-APIs.git"
+  },
+  "version": "1.0.1"
+}
