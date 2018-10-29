@@ -68,16 +68,60 @@ h1 {
     margin-right: 10px;
 }
 
-div.navigation div.button a {
+div.button a {
     min-width: 75%;
 }
 
-div.navigation div.button {
+div.button {
     margin-bottom: 10px;
+}
+
+div.button button {
+    min-width: 245px;
 }
 
 #back {
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+
+#battery {
+    background: #2e2e2e;
+    height: 245px;
+    width: 106px;
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 15%;
+}
+
+#battery::before {
+    content: "";
+    z-index: 0;
+    background: #2e2e2e;
+    height: 13px;
+    width: 36px;
+    margin-top: -13px;
+    margin-left: -17px;
+    position: absolute;
+}
+
+#battery-charge {
+    background: #39d200;
+    height: 100%;
+    width: 106px;
+    z-index: 1;
+    bottom: 0px;
+    position: absolute;
+}
+
+#battery-charge h2 {
+    margin: 85px 0;
+    font-size: 33px;
+}
+
+#contacts {
+    left: 50%;
+    transform: translate(-50%, 0);
 }
