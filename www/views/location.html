@@ -60,14 +60,26 @@
     <div class="app">
         <h1>Location</h1>
         <div id="deviceready">
+            <div>
+                <span class="mdl-chip mdl-chip--contact">
+                    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">La</span>
+                    <span id="latitude" class="mdl-chip__text"></span>
+                </span>
+            </div>
+            <div>
+                <span class="mdl-chip mdl-chip--contact">
+                    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">Lo</span>
+                    <span id="longitude" class="mdl-chip__text"></span>
+                </span>
+            </div>
             <a href="../index.html" id="back" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                 <i class="material-icons">home</i>
             </a>
         </div>
     </div>
+    <script src="../js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/location.js"></script>
     <script type="text/javascript" src="../cordova.js"></script>
-    <script type="text/javascript" src="../js/index.js"></script>
-    <script type="text/javascript" src="../js/includeHTML.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>

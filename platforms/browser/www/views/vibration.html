@@ -60,13 +60,13 @@
         <h1>Vibration</h1>
         <div id="deviceready">
             <div class="button">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                <button onclick="app.vibrateSimple()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
                     <div class="material-icons">vibration</div>
                     Vibrate
                 </button>
             </div>
             <div class="button">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                <button onclick="app.vibrateMusic()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                     <div class="material-icons">print</div>
                     Vibrate like a printer
                 </button>
@@ -76,9 +76,9 @@
             </a>
         </div>
     </div>
+    <script src="../js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/vibration.js"></script>
     <script type="text/javascript" src="../cordova.js"></script>
-    <script type="text/javascript" src="../js/index.js"></script>
-    <script type="text/javascript" src="../js/includeHTML.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>

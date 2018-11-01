@@ -17,62 +17,50 @@
  * under the License.
  */
 
+function changeColorBatteryCharge(batteryLevel) {
+    let $battery = $('#battery-charge');
+    $battery.removeClass(['high', 'medium', 'low']);
+    if (batteryLevel < 50 && batteryLevel >= 20) {
+        $battery.addClass('medium')
+    } else if (batteryLevel < 20) {
+        $battery.addClass('low')
+    } else {
+        $battery.addClass('high')
+    }
+}
+
+function changeStateBatteryCharge(batteryLevel) {
+    let $battery = $('#battery-charge');
+    let batteryLevelStr = `${batteryLevel}%`;
+    $('#battery h2').text(batteryLevelStr)
+    $battery.height(batteryLevelStr)
+    if (batteryLevel < 99) {
+        $battery.css('border-radius', '0px');
+    }
+}
+
+function changeStatePlugged(isPlugged) {
+    isPlugged ? null : $('#negation-state').text('not');
+}
+
+function onBatteryStatus(status) {
+    changeStatePlugged(status.isPlugged)
+    changeStateBatteryCharge(status.level);
+    changeColorBatteryCharge(status.level);
+    console.log(`Battery Level: ${status.level}`);
+}
+
 var app = {
-    // Application Constructor
     initialize: function() {
         this.bindEvents();
     },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+        window.addEventListener("batterystatus", onBatteryStatus, true);
     },
-
-    // Update DOM on a Received Event
     receivedEvent: function(id) {
-        window.addEventListener("batterystatus", onBatteryStatus, false);
-
         
-        function changeColorBatteryCharge(batteryLevel) {
-            let $battery = $('#battery-charge');
-            $battery.removeClass(['high', 'medium', 'low']);
-            if (batteryLevel < 50 && batteryLevel >= 20) {
-                $battery.addClass('medium')
-            } else if (batteryLevel < 20) {
-                $battery.addClass('low')
-            } else {
-                $battery.addClass('high')
-            }
-        }
-
-        function changeStateBatteryCharge(batteryLevel) {
-            let $battery = $('#battery-charge');
-            let batteryLevelStr = `${batteryLevel}%`;
-            $('#battery h2').text(batteryLevelStr)
-            $battery.height(batteryLevelStr)
-            if (batteryLevel < 99) {
-                $battery.css('border-radius', '0px');
-            }
-        }
-
-        function changeStatePlugged(isPlugged) {
-            isPlugged ? null : $('#negation-state').text('not');
-        }
-
-        function onBatteryStatus(status) {
-            changeStatePlugged(status.isPlugged)
-            changeStateBatteryCharge(status.level);
-            changeColorBatteryCharge(status.level);
-            console.log(`Battery Level: ${status}`, status);
-        }
     }
 };

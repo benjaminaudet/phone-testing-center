@@ -24,7 +24,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:rgb(223, 223, 223);
+    background-color:#fff;
     background-attachment:fixed;
     font-family:'Roboto', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
@@ -155,8 +155,31 @@ div.button {
     transform: translate(-50%, 0);
 }
 
+#contacts tbody {
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+}
+
+#contacts tbody tr td {
+    /* max-width: 50px; */
+}
+
+thead, tbody { display: block; }
+
+tbody {
+    height: 300px;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: auto;  /* Hide the horizontal scroll */
+}
+
 /* Vibration rules */
 
 div.button button {
     min-width: 245px;
+}
+
+/* Language rules */
+
+#language h2 {
+    font-size: 20px;
 }
