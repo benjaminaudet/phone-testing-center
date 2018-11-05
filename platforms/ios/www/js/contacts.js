@@ -11,7 +11,6 @@ var app = {
     receivedEvent: function(id) {
         let BreakException = {};
         function onSuccess(contacts) {
-            alert(contacts.length)
             try {
                 contacts.forEach(c => {
                     if (!c.displayName && !c.phoneNumbers && !c.emails && !c.displayName.includes('.')) {

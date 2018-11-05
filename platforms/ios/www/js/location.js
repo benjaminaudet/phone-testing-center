@@ -17,7 +17,7 @@ var app = {
             positionError => () => {
                 alert('error happened in locating');
             },
-            { maximumAge: 3000, timeout: 5000, enableHighAccuracy: true }
+            { maximumAge: 500, timeout: 3000, enableHighAccuracy: true }
         );
     }
 };

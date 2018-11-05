@@ -56,12 +56,12 @@
     <feature name="Contacts">
         <param name="ios-package" value="CDVContacts" />
     </feature>
-    <name>helloworld</name>
+    <name>Phone Testing Center</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        An application that gathers a lot of differents features in order to test cordova API
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="benjamin@audet.fr" href="audet.fr">
+        Benjamin Audet
     </author>
     <content src="index.html" />
     <access origin="*" />

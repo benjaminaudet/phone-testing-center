@@ -189,7 +189,7 @@ app.isoLangs = {
     },
     "fr":{
         "name":"French",
-        "nativeName":"français, langue française"
+        "nativeName":"français, langue française",
     },
     "ff":{
         "name":"Fula; Fulah; Pulaar; Pular",
