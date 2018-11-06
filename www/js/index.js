@@ -9,9 +9,6 @@ var app = {
         app.receivedEvent('deviceready');
     },
     receivedEvent: function(id) {
-        app.initCamera()
-        function onBatteryStatus(status) {
-            receivedElement.innerHTML = `Battery Level: ${status.level}`;
-        }
+        localStorage.clear();
     }
 };

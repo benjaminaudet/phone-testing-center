@@ -20,7 +20,8 @@
       "cordova-plugin-network-information": {},
       "cordova-plugin-vibration": {},
       "cordova-plugin-vibrate-intense": {},
-      "cordova-plugin-contacts": {}
+      "cordova-plugin-contacts": {},
+      "cordova-plugin-device-motion": {}
     }
   },
   "dependencies": {
@@ -29,7 +30,7 @@
     "cordova-plugin-camera": "~2.4.1",
     "cordova-plugin-contacts": "^3.0.1",
     "cordova-plugin-device": "~1.1.6",
-    "cordova-plugin-device-motion": "^2.0.1",
+    "cordova-plugin-device-motion": "~2.0.1",
     "cordova-plugin-dialogs": "~1.3.3",
     "cordova-plugin-file": "~4.3.3",
     "cordova-plugin-geolocation": "~2.4.3",

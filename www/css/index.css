@@ -180,8 +180,23 @@ div.button button {
 
 /* Language rules */
 
+#language {
+    width: 300px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
 #language h2 {
     font-size: 20px;
+    line-height: 28px;
+}
+
+#language span {
+    background: #2196f3;
+    margin: 3px;
+    padding: 3px 12px;
+    color: white;
+    border-radius: 50px;
 }
 
 /* Accelerometer rules */
@@ -228,8 +243,4 @@ div.button button {
 #data .label,
 #data .value {
     font-size: 18px;
-}
-
-#data .value {
-    back
 }
