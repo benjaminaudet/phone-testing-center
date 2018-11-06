@@ -109,5 +109,5 @@
     <plugin name="cordova-plugin-network-information" spec="~1.3.3" />
     <plugin name="cordova-plugin-vibration" spec="~2.1.5" />
     <plugin name="cordova-plugin-vibrate-intense" spec="^1.0.1" />
-    <plugin name="cordova-plugin-contacts" spec="^3.0.1" />
+    <plugin name="cordova-plugin-contacts" spec="^2.3.1" />
 </widget>
